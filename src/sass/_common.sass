@@ -1,0 +1,44 @@
+//vars
+$red: #d50000
+$white: #fff
+
+//fonts
++font('Open Sans Regular', 'opensans-regular')
++font('Open Sans Semibold', 'opensans-semibold')
++font('Open Sans Bold', 'opensans-bold')
+
+body
+	font: 400 18px/1.4 'Open Sans Regular', sans-serif
+	color: #959595
+	background-color: $red
+
+a
+	text-decoration: none
+	color: $white
+
+.btn
+	font: 400 20px/1.4 'Open Sans Bold', sans-serif
+	text-align: center
+	border-radius: 30px
+	display: inline-block
+	background-color: $red
+	padding: 7px 59px
+	transition: background-color 0.25s
+	&:hover
+		background-color: lighten($red, 5%)
+
+.btn-scroll
+	+hide-text
+	padding: 10px
+	&:hover
+		.icon
+			transform: translateY(5px)
+	.icon
+		font-size: 20px
+		color: $red
+		transition: transform 0.25s
+
+.title
+	font: 400 46px/1.2 'Open Sans Regular', sans-serif
+	color: $white
+
