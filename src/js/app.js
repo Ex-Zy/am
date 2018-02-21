@@ -1,3 +1,5 @@
-import sayHello from './lib/sayHello.js';
+import './partials/_scrollTo';
+import './partials/_particles';
+import {WOW} from 'wowjs';
 
-sayHello();
+new WOW().init();

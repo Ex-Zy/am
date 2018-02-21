@@ -12,7 +12,7 @@ function build(cb) {
         'nunjucks',
         'webpack',
         'copy',
-        'list-pages',
+        // 'list-pages',
         cb
     );
 }

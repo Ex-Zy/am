@@ -1,0 +1,29 @@
+<svg width="107" height="131" viewBox="0 0 107 131" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Group 6
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <use xlink:href="#a" transform="translate(29 34)"/>
+    <use xlink:href="#b" transform="matrix(0 1 1 0 9 48)" fill="#D50000"/>
+    <use xlink:href="#c" transform="scale(-1 1) rotate(31.338 -43.69 -64.655)" fill="#D50000"/>
+    <use xlink:href="#d" transform="matrix(-1 0 0 1 28.5 27)" fill="#D50000"/>
+    <use xlink:href="#e" transform="rotate(180 14.25 46.89)" fill="#D50000"/>
+    <use xlink:href="#b" transform="rotate(90 25 73)" fill="#D50000"/>
+    <use xlink:href="#c" transform="rotate(31.338 9.81 126.073)" fill="#D50000"/>
+    <use xlink:href="#d" transform="translate(78.5 27)" fill="#D50000"/>
+    <use xlink:href="#f" transform="matrix(1 0 0 -1 78.5 93.78)" fill="#D50000"/>
+    <g transform="translate(-14265 2673)">
+        <use xlink:href="#g" transform="rotate(-64.454 5048.065 -12669.77)" fill="#D50000"/>
+    </g>
+    <defs>
+        <path id="a" fill-rule="evenodd" d="M29 48.587C40.382 46.475 49 36.494 49 24.5 49 10.97 38.031 0 24.5 0S0 10.97 0 24.5c0 11.64 8.117 21.384 19 23.88V54h-2a1 1 0 1 0 0 2h2v5.5h-3v27.536l.003.035c.094 1.314.59 3.257 1.806 4.899C19.055 95.654 21.048 97 24 97s4.945-1.346 6.191-3.03c1.215-1.642 1.712-3.585 1.806-4.899l.003-.035V61.5h-3V56h2a1 1 0 1 0 0-2h-2v-5.413zM47 24.5C47 36.926 36.927 47 24.5 47S2 36.926 2 24.5 12.073 2 24.5 2 47 12.074 47 24.5zM27 48.874a24.74 24.74 0 0 1-6-.122V54h6v-5.126zM27 56v5.5h-6V56h6zm-9 7.5v25.463c.08 1.02.483 2.556 1.416 3.817C20.329 94.013 21.752 95 24 95c2.248 0 3.67-.987 4.584-2.22.933-1.26 1.337-2.797 1.416-3.817V63.5H18z"/>
+        <path id="b" fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h22a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/>
+        <path id="c" fill-rule="evenodd" d="M0 1a1 1 0 0 1 1-1h24.228a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z"/>
+        <path id="d" fill-rule="evenodd" d="M26.529 9a7 7 0 1 1-14 0 7 7 0 0 1 14 0zm2 0a9 9 0 0 1-16.63 4.777L1.432 18.683a1 1 0 0 1-.861-1.805l10.462-4.902A9 9 0 0 1 19.528 0a9 9 0 0 1 9 9z"/>
+        <path id="e" fill-rule="evenodd" d="M.57 17.878a1 1 0 0 0 .86 1.805l10.47-5.906A9 9 0 0 0 28.529 9a9 9 0 0 0-9-9 9 9 0 0 0-8.497 11.976L.57 17.878zM26.529 9a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/>
+        <path id="f" fill-rule="evenodd" d="M.57 16.878a1 1 0 0 0 .86 1.805l10.47-4.906A9 9 0 0 0 28.529 9a9 9 0 0 0-9-9 9 9 0 0 0-8.497 11.976L.57 16.878zM26.529 9a7 7 0 1 1-14 0 7 7 0 0 1 14 0z"/>
+        <path id="g" fill-rule="evenodd" d="M25.115 9a7 7 0 1 1-14 0 7 7 0 0 1 14 0zm2 0a9 9 0 0 1-16.629 4.777l-9.055 4.319A1 1 0 0 1 .57 16.29l9.049-4.315A9 9 0 0 1 18.115 0a9 9 0 0 1 9 9z"/>
+    </defs>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1520" height="1050" viewBox="0 0 1520 1050" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-11277 1539)">
+<g id="Group">
+<g id="Union" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="translate(11317 -1498.76)" fill="#FFFFFF"/>
+</g>
+<g id="Subtract" filter="url(#filter1_d)">
+<use xlink:href="#path1_fill" transform="translate(11317 -1438)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="11277" y="-1539" width="1520" height="297" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="20"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.85 0 0 0 0 0.85 0 0 0 1 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" filterUnits="userSpaceOnUse" x="11297" y="-1458" width="1480" height="969" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.85 0 0 0 0 0.85 0 0 0 0 0.85 0 0 0 1 0"/>
+<feBlend mode="multiply" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 850.398 96.9905C 1144.81 19.1511 1349.24 -0.406009 1440 0.00634452L 1440 142.929C 1417.31 145.602 1393.88 148.313 1369.9 151.035C 1384.75 152.818 1399.21 154.577 1413.23 156.304C 1416.88 156.755 1416.53 162.062 1412.85 162.209L 1179.36 171.535C 898.365 200.032 612.25 220.794 587.337 195.182L 47.2637 216.754C 47.0879 216.761 46.916 216.754 46.7422 216.73C 31.915 214.7 16.0537 212.183 0 209.209L 0 72.0278C 168.773 48.6851 516.145 67.6196 850.398 96.9905Z"/>
+<path id="path1_fill" d="M 0 925.225C 133.516 937.36 403.826 909.295 680.522 880.568C 982.668 849.198 1292.43 817.038 1440 835.566L 1440 56.2314C 1272.46 -84.9411 220.487 79.7905 0 116.187L 0 925.225Z"/>
+</defs>
+</svg>

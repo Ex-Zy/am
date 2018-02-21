@@ -1,0 +1,25 @@
+<svg width="96" height="116" viewBox="0 0 96 116" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Group 7
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <use xlink:href="#a" transform="rotate(45 14.243 61.7)" fill="#D50000"/>
+    <use xlink:href="#b" transform="rotate(90 24.5 24.5)" fill="#D50000"/>
+    <use xlink:href="#b" transform="rotate(180 48 34.5)"/>
+    <use xlink:href="#b" transform="rotate(180 48 46)"/>
+    <use xlink:href="#b" transform="rotate(180 45 40.5)"/>
+    <use xlink:href="#b" transform="matrix(1 0 0 -1 0 69)"/>
+    <use xlink:href="#b" transform="matrix(1 0 0 -1 0 92)"/>
+    <use xlink:href="#b" transform="matrix(1 0 0 -1 6 81)"/>
+    <use xlink:href="#c" transform="rotate(135 39.094 18.19)" fill="#D50000"/>
+    <use xlink:href="#c" transform="scale(1 -1) rotate(-45 3.384 -19.812)" fill="#D50000"/>
+    <use xlink:href="#d" transform="rotate(45 7.4 65.665)"/>
+    <defs>
+        <path id="a" fill-rule="evenodd" d="M16.264.342a.996.996 0 0 1 .087-.084 1 1 0 0 1 .859-.24h16.803A1.002 1.002 0 0 1 35 1.22v32.798a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-17c0-.087.01-.168.031-.248a.999.999 0 0 1 .288-.883L16.264.342zm-5.83 20.656L2.177 16.87 8.503 10.7l1.93 10.297zM21.149 9.576l-9.422-2.019 5.682-5.54h.076l3.664 7.559zm10.457-7.558H19.708l3.885 8.013 8.013-8.013zm-7.09 9.918L33 3.452v25.981l-8.483-17.497zm-2.663-.164L10.272 9.29l2.22 11.84 9.36-9.36zm-8.073 10.9l9.24-9.24 8.868 18.293-18.108-9.053zm-3.376.548L2 19.017v12.607l8.404-8.404zm-6.97 9.798l8.856-8.856L30 33.018H3.435z"/>
+        <path id="b" fill-rule="evenodd" d="M0 1c0-.552.243-1 .542-1h11.916c.3 0 .542.448.542 1s-.242 1-.542 1H.542C.242 2 0 1.552 0 1z"/>
+        <path id="c" fill-rule="evenodd" d="M0 1c0-.552.218-1 .487-1h10.715c.269 0 .487.448.487 1s-.218 1-.487 1H.487C.218 2 0 1.552 0 1z"/>
+        <path id="d" fill-rule="evenodd" d="M42 0v6h-1v35H6v1H0v9h6v1h35v35h.353l4.235 9.41a1.001 1.001 0 0 0 1.824 0L51.647 87H52V52h35v-.353l9.41-4.235a1 1 0 0 0 0-1.824L87 41.353V41H52V6h-1V0h-9zm8 41V8h-7v33h7zm-7 2h7v7h-7v-7zm-2 0H8v7h33v-7zm2 9v33h7V52h-7zm9-2v-7h33v7H52zM49 2h-5v4h5V2zm-5.453 85l2.953 6.563L49.453 87h-5.906zM2 44v5h4v-5H2zm85 5.453l6.563-2.953L87 43.547v5.906z"/>
+    </defs>
+</svg>

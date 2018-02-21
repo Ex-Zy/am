@@ -1,6 +1,10 @@
 //vars
 $red: #d50000
 $white: #fff
+$black: #424242
+$gray: #bdbdbd
+$gray-secondary: #959595
+$gray-th: #d9d9d9
 
 //fonts
 +font('Open Sans Regular', 'opensans-regular')
@@ -9,14 +13,17 @@ $white: #fff
 
 body
 	font: 400 18px/1.4 'Open Sans Regular', sans-serif
-	color: #959595
+	color: $gray-secondary
 	background-color: $red
+	text-align: center
+	+smooth-font
 
 a
 	text-decoration: none
 	color: $white
 
-.btn
+.btn, 
+.btn-default
 	font: 400 20px/1.4 'Open Sans Bold', sans-serif
 	text-align: center
 	border-radius: 30px
@@ -26,10 +33,24 @@ a
 	transition: background-color 0.25s
 	&:hover
 		background-color: lighten($red, 5%)
+	&:active
+		transform: translateY(1px)
+
+.btn
+	&_position
+		position: relative
+		z-index: 1
+		
+.btn-default
+	color: $white
 
 .btn-scroll
 	+hide-text
 	padding: 10px
+	display: inline-block
+	&_position
+		position: relative
+		z-index: 1
 	&:hover
 		.icon
 			transform: translateY(5px)
@@ -41,4 +62,17 @@ a
 .title
 	font: 400 46px/1.2 'Open Sans Regular', sans-serif
 	color: $white
+	position: relative
+	z-index: 1
 
+.input
+	display: block
+	width: 100%
+	background-color: $white 
+	border: 2px solid $gray
+	border-radius: 50px
+	color: $gray
+	font: 400 20px/1.2 'Open Sans Regular', sans-serif
+	padding: 16px 30px
+	+placeholder
+		color: $gray

@@ -1,0 +1,12 @@
+<svg width="1440" height="315" viewBox="0 0 1440 315" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Intersect</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-13581 -843)">
+<g id="Intersect">
+<use xlink:href="#path0_fill" transform="translate(13581 843)" fill="#FFFFFF"/>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 1440 7.73411L 1440 314.629L 0 314.629L 0 0C 187.706 14.9704 1079.98 80.6691 1440 7.73411Z"/>
+</defs>
+</svg>
