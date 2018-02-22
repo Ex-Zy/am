@@ -17,7 +17,7 @@ const removeAnimationFromHeader = () => {
 
 WIN.on('load', () => {
   if(isScrolling()) { 
-    addAnimationFromHeader();
+    HEADER.addClass('is-animate');
   }
 });
 
@@ -28,26 +28,26 @@ WIN.on('scroll', () => {
   if(!isScrolling() && !scrollFlag) {
     removeAnimationFromHeader();
   }
-  checkSection();
+  // checkSection();
 });
 
 
-let checkSection = () => {
-  $('[data-section]').each(function() {
-    let topSection = $(this).offset().top - 100;
-    let bottomSection = topSection + $(this).height();
-    let scrollTop = WIN.scrollTop();
-    let id = $(this).data('section');
-    let links = $('.nav__link');
-    let currentLink = links.filter('[href="#' + id +'"]');
+// let checkSection = () => {
+//   $('[data-section]').each(function() {
+//     let topSection = $(this).offset().top - 100;
+//     let bottomSection = topSection + $(this).height();
+//     let scrollTop = WIN.scrollTop();
+//     let id = $(this).data('section');
+//     let links = $('.nav__link');
+//     let currentLink = links.filter('[href="#' + id +'"]');
 
-    if(topSection < scrollTop && bottomSection > scrollTop) {
+//     if(topSection < scrollTop && bottomSection > scrollTop) {
 	  
-	  links.removeClass('is-active');
-	  currentLink.addClass('is-active');
-	  window.location.hash = id;
-    }
-  });
-};
+// 	  links.removeClass('is-active');
+// 	  currentLink.addClass('is-active');
+// 	  window.location.hash = id;
+//     }
+//   });
+// };
 
 // showSection(window.location.hash, false);
