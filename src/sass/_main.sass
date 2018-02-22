@@ -70,6 +70,8 @@
 		
 .company-content
 	padding: 264px 0 60px
+	position: relative
+	z-index: 10 
 	&__title
 		color: $white
 		font-size: 46px
@@ -124,7 +126,7 @@
 		width: 10000px
 		height: 615px
 		background: url(../img/services-bg-top.svg) no-repeat center
-		background-size: contain
+		z-index: 1
 	&:after
 		content: ''
 		display: block
@@ -136,6 +138,7 @@
 		width: 10000px
 		height: 228px
 		background: url(../img/services-bg-bottom.svg) no-repeat center
+		z-index: 1
 
 	.title
 		color: $black
@@ -146,6 +149,8 @@
 	flex-wrap: wrap
 	justify-content: space-between
 	position: relative
+	z-index: 2
+	+gpu
 	&__item
 		width: 32%
 		min-height: 456px
@@ -162,6 +167,7 @@
 	line-height: 1.75
 	color: $gray-secondary
 	position: relative
+	z-index: 10 
 	&__top
 		margin: 20px 0 0
 	&__body
