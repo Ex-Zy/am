@@ -17,6 +17,8 @@ body
 	background-color: $red
 	text-align: center
 	+smooth-font
+	&.is-hidden
+		overflow: hidden
 
 a
 	text-decoration: none
@@ -84,6 +86,21 @@ a
 			opacity: 0
 	&:active
 		top: 1px
+
+.btn-close
+	+hide-text
+	cursor: pointer
+	background: none
+	position: absolute
+	top: 28px
+	right: 28px
+	padding: 10px
+	.icon
+		transition fill 0.4s
+		font-size: 32px
+	+hover
+		.icon
+			fill: lighten($gray, 10%)
 
 .title
 	font: 400 46px/1.2 'Open Sans Regular', sans-serif

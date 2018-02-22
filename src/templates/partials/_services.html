@@ -26,7 +26,7 @@
 		<!-- END services-cont -->
 
 		<div class="services-list">
-			<div class="services-list__item s-item wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
+			<div class="services-list__item s-item wow fadeIn js-open-popup" data-link="service-1" data-wow-duration="1.2s" data-wow-delay="0.4s">
 				<div class="s-item__ico">
 					{{mixins.svgService("provides")}}
 				</div>
@@ -37,7 +37,7 @@
 					Dedicated manageable team of software engineers, which exactly match project needs in skills and manpower.
 				</div>
 			</div>
-			<div class="services-list__item s-item wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
+			<div class="services-list__item s-item wow fadeIn js-open-popup" data-link="service-2" data-wow-duration="1.2s" data-wow-delay="0.4s">
 				<div class="s-item__ico">
 					{{mixins.svgService("competences")}}
 				</div>
@@ -48,7 +48,7 @@
 					Mobile applications development including dedicated mobile <br> features like NFC, GPS, IR, <br> messaging
 				</div>
 			</div>
-			<div class="services-list__item s-item wow fadeIn" data-wow-duration="1.2s" data-wow-delay="0.4s">
+			<div class="services-list__item s-item wow fadeIn js-open-popup" data-link="service-3" data-wow-duration="1.2s" data-wow-delay="0.4s">
 				<div class="s-item__ico">
 					{{mixins.svgService('technical')}}
 				</div>
@@ -60,6 +60,66 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- BEGIN popup -->
+		<div class="popup js-popup" data-popup="service-1">
+			<button type="button" class="btn-close js-close">close {{mixins.icon('close')}}</button>
+		  <div class="popup__in">
+		    <div class="popup__title title">Escalibre provides the following specific capabilities:</div>
+		    <div class="popup__text">
+		      Team of analysts and project managers, capable to capture customer requirements (business and technical) and build corresponding technical processes following well known practices of Agile (Scrum, XP, Lean) and more formal processes (RUP, ITIL), which allow to reach project goals (business and technical) with a maximum of transparency, productivity and quality.<br><br>
+
+		      Dedicated manageable team of software engineers, which exactly match project needs in skills and manpower.<br><br>
+
+		      Teams of QA engineers who enable quality driven development practices from the very beginning of any project.<br><br>
+
+		      Full-scale project documentation covering all stages from project inception till acceptance testing on customer side in all aspects of the project (planning, budgeting, technical specifications, reports).<br><br>
+
+		      Version control and regular deliveries of intermediate results including produced source code.
+		    </div>
+		  </div>
+		</div>
+		<!-- END popup -->
+
+		<!-- BEGIN popup -->
+		<div class="popup js-popup" data-popup="service-2">
+			<button type="button" class="btn-close js-close">close {{mixins.icon('close')}}</button>
+		  <div class="popup__in">
+		    <div class="popup__title title">Escalibre provides the following specific capabilities:</div>
+		    <div class="popup__text">
+		      Team of analysts and project managers, capable to capture customer requirements (business and technical) and build corresponding technical processes following well known practices of Agile (Scrum, XP, Lean) and more formal processes (RUP, ITIL), which allow to reach project goals (business and technical) with a maximum of transparency, productivity and quality.<br><br>
+
+		      Dedicated manageable team of software engineers, which exactly match project needs in skills and manpower.<br><br>
+
+		      Teams of QA engineers who enable quality driven development practices from the very beginning of any project.<br><br>
+
+		      Full-scale project documentation covering all stages from project inception till acceptance testing on customer side in all aspects of the project (planning, budgeting, technical specifications, reports).<br><br>
+
+		      Version control and regular deliveries of intermediate results including produced source code.
+		    </div>
+		  </div>
+		</div>
+		<!-- END popup -->
+
+		<!-- BEGIN popup -->
+		<div class="popup js-popup" data-popup="service-3">
+			<button type="button" class="btn-close js-close">close {{mixins.icon('close')}}</button>
+		  <div class="popup__in">
+		    <div class="popup__title title">Escalibre provides the following specific capabilities:</div>
+		    <div class="popup__text">
+		      Team of analysts and project managers, capable to capture customer requirements (business and technical) and build corresponding technical processes following well known practices of Agile (Scrum, XP, Lean) and more formal processes (RUP, ITIL), which allow to reach project goals (business and technical) with a maximum of transparency, productivity and quality.<br><br>
+
+		      Dedicated manageable team of software engineers, which exactly match project needs in skills and manpower.<br><br>
+
+		      Teams of QA engineers who enable quality driven development practices from the very beginning of any project.<br><br>
+
+		      Full-scale project documentation covering all stages from project inception till acceptance testing on customer side in all aspects of the project (planning, budgeting, technical specifications, reports).<br><br>
+
+		      Version control and regular deliveries of intermediate results including produced source code.
+		    </div>
+		  </div>
+		</div>
+		<!-- END popup -->
 	</div>
 </section>
 <!-- END services -->

@@ -9,6 +9,8 @@
     </desc>
     <use xlink:href="#a" transform="rotate(-135 13.363 11.048)"/>
     
+</symbol><symbol id="icon-close" viewBox="0 0 357 357">
+    <path d="M357 35.7L321.3 0 178.5 142.8 35.7 0 0 35.7l142.8 142.8L0 321.3 35.7 357l142.8-142.8L321.3 357l35.7-35.7-142.8-142.8z"/>
 </symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook

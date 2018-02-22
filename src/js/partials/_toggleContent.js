@@ -1,6 +1,8 @@
+import $ from 'jquery';
+
 const btnMore = $('.js-btn-more');
 const content = $('.services-cont__body');
-const duration = 800;
+const duration = 300;
 
 btnMore.on('click', clickHandlerBtnMore);
 
