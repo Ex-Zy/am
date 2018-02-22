@@ -3,26 +3,48 @@
 	<div class="inner">
 		<!-- BEGIN company-content -->
 		<div class="company-content">
-			<h1 class="company-content__title wow fadeInUp" data-wow-duration="0.8s">
+			<h1 class="company-content__title wow fadeInUp" data-wow-duration="2s">
 				APPLIED METHODS flexibly adapts its development processes to customer requirements
 			</h1>
-			<div class="company-content__btn wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+			<div class="company-content__btn wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.5s">
 				<a href="#contact" class="btn btn_position js-btn-scroll">Contact Us</a>
 			</div>
-			<div class="company-content__bottom wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
+			<div class="company-content__bottom wow fadeInUp" data-wow-duration="2s" data-wow-delay="1s">
 				<span class="company-content__txt company-content__txt_position">Don’t hesitate to contact us.</span>
 			</div>
-			<div class="company-content__scroll-btn wow fadeInDown" data-wow-duration="0.8s" data-wow-delay="1s">
+			<div class="company-content__scroll-btn wow fadeInDown" data-wow-duration="2s" data-wow-delay="1.5s">
 				<a href="#services" class="btn-scroll btn-scroll_position js-btn-scroll" title="Scroll to bottom">
 					Scroll to bottom
 					{{mixins.icon('arrow-bottom')}}
 				</a>
 			</div>
+			<div class="company-content__info wow fadeInUp" data-wow-duration="2s" data-wow-delay="2s">
+				<span class="company-content__info-section js-open-popup" data-link="company">About Company</span>
+			</div>
 		</div>
 		<!-- END company-content -->
 	</div>
+
 	<!-- BEGIN particles-js -->
 	<div id="particles-js"></div>
 	<!-- END particles-js -->
+
+	<!-- BEGIN popup -->
+	<div class="popup js-popup" data-popup="company">
+		<button type="button" class="btn-close js-close">close {{mixins.icon('close')}}</button>
+	  <div class="popup__in">
+	    <div class="popup__title title">Company</div>
+	    <div class="popup__text">
+	    	Escalibre LLC was founded in 2016. We are a software development company with offices in Ukraine (Kyiv) and Germany (Munich).<br><br>
+
+	    	We specialize in creating high-quality enterprise systems, requirements engineering and technical consulting. Our services also include Application Development, Maintenance and Quality Assurance services to its clients for custom projects or in a team augmentation business model.<br><br>
+
+	    	Our team members are professionals with a strong background in programming, IT-management, product design and business analysis.<br><br>
+
+	    	Either you are a small startup or a big company, be sure that you will receive an individual approach in solving your tasks—from pre project consultations to further support and development of your product.
+	    </div>
+	  </div>
+	</div>
+	<!-- END popup -->
 </section>
 <!-- END company -->

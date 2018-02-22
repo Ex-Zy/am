@@ -5,25 +5,17 @@
 	
 .header
 	padding: 60px 0 0
-	position: fixed
+	position: absolute
 	left: 0
 	right: 0
 	top: 0
 	z-index: 2
-	transition: all 0.4s
 	&__in
 		display: flex
 		flex-wrap: wrap
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
-	&.is-animate
-		padding: 10px 0
-		background-color: $black 
-		.logo
-			width: 120px
-			padding: 58px 0 0
-			transition: all 0.4s
 		
 .logo
 	+hide-text
@@ -84,11 +76,18 @@
 		padding: 22px 0 0
 		color: $gray-th
 	&__scroll-btn
-		padding: 80px 0 0 
+		padding: 60px 0 0 
 	&__txt
 		&_position
 			position: relative
 			z-index: 1
+	&__info
+		padding: 40px 0
+		position: relative
+		z-index: 1
+		display: inline-block
+		cursor: pointer
+		color: $gray-th
 		
 .services
 	padding: 50px 0
@@ -131,8 +130,11 @@
 	background-color: $white
 	padding: 18px 18px 30px
 	box-shadow: 0px 10px 40px $gray-th
+	transition: box-shadow 0.25s
 	border-radius: 3px
 	cursor: pointer
+	&:hover
+		box-shadow: 0px 15px 50px darken($gray-th, 10%)
 	&__ico
 		width: 160px
 		height: 160px
@@ -194,8 +196,6 @@
 		bottom: 0
 		z-index: -1
 		background-color: $white 
-		
-		
 	&__in
 		max-width: 505px
 	.title
@@ -218,11 +218,11 @@
 	z-index: 0
 
 .popup
-	position: absolute
-	top: 50px
-	bottom: 50px
-	left: 0
+	position: fixed
+	top: 0
 	right: 0
+	left: 0
+	bottom: 0
 	overflow-x: hidden
 	overflow-y: auto
 	border-radius: 3px
@@ -237,6 +237,8 @@
 		max-width: 1200px
 		margin: 0 auto
 		padding: 125px 10px
+	&__title
+		color: $black
 	&__text
 		margin: 70px 0 0
 		font: 400 18px/1.75 'Open Sans Regular', sans-serif
