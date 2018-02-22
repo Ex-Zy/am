@@ -3,25 +3,34 @@
 	padding: 0 10px
 	margin: 0 auto
 	
-header
+.header
 	padding: 60px 0 0
-	position: absolute
+	position: fixed
 	left: 0
 	right: 0
 	top: 0
 	z-index: 2
-	.inner
+	transition: all 0.4s
+	&__in
 		display: flex
 		flex-wrap: wrap
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+	&.is-animate
+		padding: 10px 0
+		background-color: $black 
+		.logo
+			width: 120px
+			padding: 58px 0 0
+			transition: all 0.4s
 		
 .logo
 	+hide-text
 	background: url(../img/logo.svg) no-repeat center
+	background-size: contain
 	width: 180px
-	height: 85px
+	padding: 85px 0 0
 
 .nav
 	display: flex
