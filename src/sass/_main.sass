@@ -76,11 +76,15 @@
 		line-height: 1.25
 	&__btn
 		padding: 55px 0 0
+		position: relative
+		z-index: 30 
 	&__bottom
 		padding: 22px 0 0
 		color: $gray-th
 	&__scroll-btn
-		padding: 60px 0 0 
+		padding: 60px 0 0
+		position: relative
+		z-index: 15
 	&__txt
 		&_position
 			position: relative
@@ -252,11 +256,21 @@
 .form
 	padding: 50px 0 0
 	&__row
+		position: relative
 		&:not(:first-of-type)
 			margin: 20px 0 0
 	&__btn
 		margin: 50px 0 0
-
+	label
+		&[id*="_contact-error"]
+			position: absolute
+			left: 100%
+			top: 50%
+			margin: 0 0 0 20px
+			transform: translateY(-50%)
+			white-space: nowrap
+			font: 16px 'Open Sans Regular', sans-serif
+			color: $error
 #particles-js
 	position: absolute
 	top: 0

@@ -5,6 +5,8 @@ $black: #424242
 $gray: #bdbdbd
 $gray-secondary: #959595
 $gray-th: #d9d9d9
+$success: #43ab43
+$error: $red
 
 //fonts
 +font('Open Sans Regular', 'opensans-regular')
@@ -117,5 +119,16 @@ a
 	color: $gray
 	font: 400 20px/1.2 'Open Sans Regular', sans-serif
 	padding: 16px 30px
+	transition: border-color 0.25s, color 0.25s
 	+placeholder
 		color: $gray
+	&.error
+		border-color: $error
+		color: $error
+		+placeholder
+			color: $error
+	&.valid
+		border-color: $success
+		color: $success
+		+placeholder
+			color: $success
