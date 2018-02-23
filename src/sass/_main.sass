@@ -3,12 +3,12 @@
 	overflow: hidden
 
 .inner
-	max-width: 1200px
-	padding: 0 10px
+	max-width: 1220px
+	padding: 0 20px
 	margin: 0 auto
 	
 .header
-	padding: 60px 0 0
+	padding: 20px 0 0
 	position: absolute
 	left: 0
 	right: 0
@@ -25,8 +25,14 @@
 	+hide-text
 	background: url(../img/logo.svg) no-repeat center
 	background-size: contain
-	width: 180px
-	padding: 85px 0 0
+	width: 76px
+	padding: 120px 0 0
+	+md
+		width: 60px
+		padding: 80px 0 0
+	+sm
+		width: 40px
+		padding: 60px 0 0
 
 .nav
 	display: flex
@@ -37,6 +43,12 @@
 		transition: color 0.25s
 		position: relative
 		overflow: hidden
+		+sm
+			padding: 10px
+			font-size: 16px
+		+xs
+			font-size: 12px
+			padding: 5px 10px
 		&:after
 			content: ''
 			display: block
@@ -54,6 +66,10 @@
 				transform: scaleX(1)
 		&:last-of-type
 			padding: 10px 0 10px 28px
+			+sm
+				padding: 10px 0 0 10px
+			+xs
+				padding: 5px 0 10px 5px
 			&:after
 				right: 0
 				width: calc(100% - 28px)
@@ -63,16 +79,19 @@
 	position: relative
 	&__in	
 		height: 100vh
-		min-height: 700px
+		min-height: 750px
 		display: flex
 		flex-direction: column
 		justify-content: center
+		+md
+			min-height: 600px
+		+xs
+			min-height: 800px
 		
 .company-content
 	padding: 264px 0 60px
 	&__title
 		color: $white
-		font-size: 46px
 		line-height: 1.25
 	&__btn
 		padding: 55px 0 0
@@ -85,19 +104,25 @@
 		padding: 60px 0 0
 		position: relative
 		z-index: 15
+		+md
+			padding: 20px 0 0
 	&__txt
 		&_position
 			position: relative
 			z-index: 1
 	&__info
-		padding: 40px 0 0
+		padding: 10px 0
+		margin: 30px 0 0
 		position: relative
 		z-index: 1
 		display: inline-block
 		cursor: pointer
 		color: $gray-th
 		position: relative
+		z-index: 3
 		cursor: pointer
+		+md
+			margin: 10px 0 0
 		&:after
 			content: ''
 			display: block
@@ -108,7 +133,7 @@
 			height: 1px
 			background-color: $red
 			opacity: 1
-			margin: 2px 0 0
+			margin: -8px 0 0
 			transition: opacity 0.25s
 		&:hover
 			&:after
@@ -130,6 +155,8 @@
 		background: url(../img/services-bg-top.svg) no-repeat center
 		background-size: contain
 		z-index: 2
+		+md
+			display: none
 	&:after
 		content: ''
 		display: block
@@ -141,6 +168,8 @@
 		width: 10000px
 		height: 228px
 		background: url(../img/services-bg-bottom.svg) no-repeat center
+		+md
+			display: none
 	&__in
 		position: relative
 		z-index: 2
@@ -153,6 +182,8 @@
 	flex-wrap: wrap
 	justify-content: space-between
 	position: relative
+	+md
+		padding: 40px 0 10px
 	&__item
 		width: 32%
 		min-height: 456px
@@ -191,32 +222,59 @@
 		width: 160px
 		height: 160px
 		margin: auto
+		// .i-provides
+		// 	width: 107px
+		// 	padding: 120px 0 0
+		// .i-competences
+		// 	width: 107px
+		// 	padding: 131px 0 0
+		// .i-technical
+		// 	width: 96px
+		// 	padding: 116px 0 0
 	&__title
 		margin: 8px 0 0
 		font: 20px/26px 'Open Sans Bold', sans-serif
 		color: #4f4f4f
 		min-height: 78px
+		+md
+			font-size: 18px
+			line-height: 1.4
 	&__txt
 		margin: 26px 0 0
 		color: $gray-secondary
 		font: 18px/28px 'Open Sans Regular', sans-serif
+		+md
+			font-size: 16px
+			line-height: 1.4
 		
 .products
 	padding: 130px 0 170px
 	background-color: $red
+	+md
+		padding: 50px 0
 
 .products-list
 	padding: 70px 0 0
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
+	+md
+		padding: 25px 0 0
 	&__item
 		width: 47%
+		+md
+			width: 49%
+		+sm
+			width: 100%
+			&:not(:first-of-type)
+				margin: 20px 0 0
 
 .p-item
 	background-color: $white
 	text-align: left
 	padding: 45px 54px
+	+md
+		padding: 30px 40px
 	&__title
 		color: $red
 		font: 22px 'Open Sans Bold', sans-serif
@@ -227,6 +285,9 @@
 .contact
 	padding: 150px 0
 	position: relative
+	+md
+		padding: 50px 0 70px
+		background-color: $white 
 	&:before
 		content: ''
 		display: block
@@ -238,6 +299,8 @@
 		background: url(../img/contact-bg.svg) no-repeat top center
 		background-size: cover
 		z-index: -1
+		+md
+			display: none
 	&:after
 		content: ''
 		display: block
@@ -248,17 +311,23 @@
 		bottom: 0
 		z-index: -1
 		background-color: $white 
+		+md
+			display: none
 	&__in
 		max-width: 505px
-	.title
+	&__title
 		color: $black
 	
 .form
 	padding: 50px 0 0
+	+md
+		padding: 25px 0 0
 	&__row
 		position: relative
 		&:not(:first-of-type)
 			margin: 20px 0 0
+			+md
+				margin: 40px 0 0
 	&__btn
 		margin: 50px 0 0
 	label
@@ -271,6 +340,13 @@
 			white-space: nowrap
 			font: 16px 'Open Sans Regular', sans-serif
 			color: $error
+			+md
+				transform: none
+				top: auto
+				bottom: 100%
+				left: auto
+				right: 0
+				margin: 0 0 5px 0
 #particles-js
 	position: absolute
 	top: 0
@@ -299,12 +375,17 @@
 		max-width: 1200px
 		margin: 0 auto
 		padding: 125px 10px
+		+md
+			padding: 50px 10px
 	&__title
 		color: $black
 	&__text
 		margin: 70px 0 0
 		font: 400 18px/1.75 'Open Sans Regular', sans-serif
 		color: $gray-secondary
+		+md
+			font-size: 16px
+			margin: 30px 0 0
 	&.is-active
 		opacity: 1
 		visibility: visible

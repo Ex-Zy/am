@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import 'jquery-validation';
 
 const form = $('.js-contact-form');

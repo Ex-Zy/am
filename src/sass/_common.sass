@@ -19,6 +19,8 @@ body
 	background-color: $red
 	text-align: center
 	+smooth-font
+	+md
+		font-size: 16px
 	&.is-hidden
 		overflow: hidden
 
@@ -35,6 +37,9 @@ a
 	background-color: $red
 	padding: 7px 59px
 	transition: background-color 0.25s
+	+md
+		font-size: 16px
+		padding: 7px 30px
 	&:hover
 		background-color: lighten($red, 5%)
 	&:active
@@ -97,6 +102,9 @@ a
 	top: 28px
 	right: 28px
 	padding: 10px
+	+md
+		top: 10px
+		right: 10px
 	.icon
 		transition fill 0.4s
 		font-size: 32px
@@ -109,6 +117,8 @@ a
 	color: $white
 	position: relative
 	z-index: 1
+	+md
+		font-size: 32px 
 
 .input
 	display: block
@@ -120,6 +130,9 @@ a
 	font: 400 20px/1.2 'Open Sans Regular', sans-serif
 	padding: 16px 30px
 	transition: border-color 0.25s, color 0.25s
+	+md
+		font-size: 16px
+		padding: 10px 20px
 	+placeholder
 		color: $gray
 	&.error
