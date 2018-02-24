@@ -14,12 +14,16 @@
 	right: 0
 	top: 0
 	z-index: 2
+	+xs
+		padding: 10px 0 0
 	&__in
 		display: flex
 		flex-wrap: wrap
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+		+xs-s
+			padding: 0 10px
 		
 .logo
 	+hide-text
@@ -33,9 +37,24 @@
 	+sm
 		width: 40px
 		padding: 60px 0 0
+	+xs
+		width: 30px
+		padding: 50px 0 0
 
 .nav
 	display: flex
+	margin: 0 40px 0 auto
+	+sm
+		transform: translateY(-10px);
+		margin: 0
+	+xs
+		transform: none
+		position: absolute
+		top: 100%
+		right: 20px
+		margin: -20px 0 0
+	+xs-s
+		right: 10px
 	&__link
 		padding: 10px 28px
 		display: block
@@ -46,9 +65,14 @@
 		+sm
 			padding: 10px
 			font-size: 16px
+			&:after
+				width: calc(100% - 20px)
+				left: 10px
 		+xs
 			font-size: 12px
 			padding: 5px 10px
+		+xs-s
+			padding: 5px
 		&:after
 			content: ''
 			display: block
@@ -68,11 +92,74 @@
 			padding: 10px 0 10px 28px
 			+sm
 				padding: 10px 0 0 10px
+				&:after
+					width: calc(100% - 10px)
 			+xs
 				padding: 5px 0 10px 5px
+				&:after
+					width: calc(100% - 5px)
+					left: 5px
 			&:after
 				right: 0
 				width: calc(100% - 28px)
+
+.lang
+	position: relative
+	z-index: 5
+	+hide-text
+	margin: 10px 0 0
+	+sm
+		position: absolute
+		top: 60px
+		right: 14px
+	+xs
+		margin: 10px 0 0
+		position: absolute
+		top: 0
+	+xs-s
+		right: 10px
+	&:hover
+		.lang__list
+			display: block
+	&__current
+		position: relative
+		display: block
+		cursor: pointer
+		padding-right: 22px
+		padding-bottom: 10px
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: 7px
+			top: 50%
+			margin-top: -5px
+			transform: translateY(-50%)
+			+unselectable
+			+arr(9, 6, #999, b)
+	&__list
+		box-shadow: 0 4px 8px rgba(102, 102, 102, 0.3)
+		background-color: $white
+		text-align: center
+		position: absolute
+		padding: 5px 0
+		top: 25px
+		display: none
+		transition: all 0.5s
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 100%
+			right: 6px
+			+arr(14, 7, $white, t)
+			margin: 0 0 -1px
+	&__list-item
+		display: inline-block
+		vertical-align: top
+	a
+		display: block
+		padding: 5px 11px
 
 .company
 	background-color: #041517

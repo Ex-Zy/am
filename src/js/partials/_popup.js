@@ -27,3 +27,5 @@ POPUP_CLOSE.click(function() {
   // $(document).unbind('touchmove');
   return false;
 });
+
+$(document).bind('touchmove', false);
