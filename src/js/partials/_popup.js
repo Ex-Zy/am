@@ -18,9 +18,12 @@ POPUP_OPEN.click(function(e) {
   popupElement.addClass(ACTIVE);
   BODY.addClass(HIDDEN);
 
+  $(document).bind('touchmove', false);
+
 });
 POPUP_CLOSE.click(function() {
   $(this).parents(POPUP).removeClass(ACTIVE);
   BODY.removeClass(HIDDEN);
+  $(document).unbind('touchmove');
   return false;
 });
