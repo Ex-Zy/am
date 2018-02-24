@@ -60,13 +60,17 @@ a
 	&_position
 		position: relative
 		z-index: 1
-	&:hover
-		.icon
-			transform: translateY(5px)
-	.icon
-		font-size: 20px
-		color: $red
+	&__ico
+		width: 20px
+		padding: 20px 0 0
+		background: url(../img/arrow-bottom.svg) no-repeat center
+		background-size: contain
+		display: inline-block
+		vertical-align: middle
 		transition: transform 0.25s
+	&:hover
+		.btn-scroll__ico
+			transform: translateY(5px)
 		
 .btn-more
 	text-align: center
@@ -108,6 +112,8 @@ a
 	.icon
 		transition fill 0.4s
 		font-size: 32px
+		+sm
+			font-size: 26px
 	+hover
 		.icon
 			fill: lighten($gray, 10%)
@@ -118,7 +124,9 @@ a
 	position: relative
 	z-index: 1
 	+md
-		font-size: 32px 
+		font-size: 32px
+	+sm
+		font-size: 26px
 
 .input
 	display: block

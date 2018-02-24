@@ -85,11 +85,14 @@
 		justify-content: center
 		+md
 			min-height: 600px
-		+xs
-			min-height: 800px
+		+sm
+			min-height: auto
+			height: auto
 		
 .company-content
 	padding: 264px 0 60px
+	+sm
+		padding: 150px 0 20px 
 	&__title
 		color: $white
 		line-height: 1.25
@@ -97,6 +100,8 @@
 		padding: 55px 0 0
 		position: relative
 		z-index: 30 
+		+sm
+			padding: 30px 0 0
 	&__bottom
 		padding: 22px 0 0
 		color: $gray-th
@@ -222,15 +227,6 @@
 		width: 160px
 		height: 160px
 		margin: auto
-		// .i-provides
-		// 	width: 107px
-		// 	padding: 120px 0 0
-		// .i-competences
-		// 	width: 107px
-		// 	padding: 131px 0 0
-		// .i-technical
-		// 	width: 96px
-		// 	padding: 116px 0 0
 	&__title
 		margin: 8px 0 0
 		font: 20px/26px 'Open Sans Bold', sans-serif
@@ -246,6 +242,28 @@
 		+md
 			font-size: 16px
 			line-height: 1.4
+			
+.i-provides
+	width: 107px
+	padding: 120px 0 0
+	background: url(../img/ico1.svg) no-repeat center
+	background-size: contain
+	display: inline-block
+	vertical-align: top
+.i-competences
+	width: 107px
+	padding: 131px 0 0
+	background: url(../img/ico2.svg) no-repeat center
+	background-size: contain
+	display: inline-block
+	vertical-align: top
+.i-technical
+	width: 96px
+	padding: 116px 0 0
+	background: url(../img/ico3.svg) no-repeat center
+	background-size: contain
+	display: inline-block
+	vertical-align: top
 		
 .products
 	padding: 130px 0 170px
