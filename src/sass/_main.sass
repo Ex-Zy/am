@@ -22,6 +22,8 @@
 		flex-direction: row
 		justify-content: space-between
 		align-items: center
+		+xs
+			position: relative
 		+xs-s
 			padding: 0 10px
 		
@@ -38,8 +40,12 @@
 		width: 40px
 		padding: 60px 0 0
 	+xs
-		width: 30px
+		width: 106px
 		padding: 50px 0 0
+		background: url(../img/logo-horizontal.svg) no-repeat center
+		background-size: contain
+	+xs-s
+		width: 90px
 
 .nav
 	display: flex
@@ -52,7 +58,7 @@
 		position: absolute
 		top: 100%
 		right: 20px
-		margin: -20px 0 0
+		margin: 5px 0 0
 	+xs-s
 		right: 10px
 	&__link
@@ -62,12 +68,17 @@
 		transition: color 0.25s
 		position: relative
 		overflow: hidden
+		+md
+			padding: 10px 18px
+			&:after
+				width: calc(100% - 36px)
+				left: 18px
 		+sm
-			padding: 10px
+			padding: 10px 5px
 			font-size: 16px
 			&:after
-				width: calc(100% - 20px)
-				left: 10px
+				width: calc(100% - 10px)
+				left: 5px
 		+xs
 			font-size: 12px
 			padding: 5px 10px
@@ -90,10 +101,16 @@
 				transform: scaleX(1)
 		&:last-of-type
 			padding: 10px 0 10px 28px
+			+md
+				padding: 10px 0 10px 18px
+				&:after
+					width: calc(100% - 18px)
+					left: 18px
 			+sm
 				padding: 10px 0 0 10px
 				&:after
 					width: calc(100% - 10px)
+					left: 10px
 			+xs
 				padding: 5px 0 10px 5px
 				&:after
@@ -113,9 +130,10 @@
 		top: 60px
 		right: 14px
 	+xs
-		margin: 10px 0 0
+		margin: 5px 0 0
 		position: absolute
-		top: 0
+		top: 50%
+		transform: translateY(-50%)
 	+xs-s
 		right: 10px
 	&:hover
@@ -494,3 +512,58 @@
 	&.is-active
 		opacity: 1
 		visibility: visible
+.top
+	background-color: #041517
+	position: relative
+	&__in	
+		height: 100vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+.top-content
+	padding: 100px 0 0
+	&__title
+		color: $white
+		line-height: 1.25
+	&__scroll-btn
+		padding: 60px 0 0
+		position: relative
+		z-index: 15
+.about
+	position: relative
+	background: $white
+	&__in
+		max-width: 980px
+		padding: 50px 20px
+		margin: auto
+		height: 100vh
+		display: flex
+		align-items: center
+		+md
+			padding: 50px 20px
+			height: auto
+			min-height: 550px
+.columns
+	display: flex
+	justify-content: space-between
+	width: 100%
+	text-align: left
+	color: $gray-secondary
+	font: 400 18px/1.75 'Open Sans Regular', sans-serif
+	+md
+		flex-direction: column
+		text-align: center
+	+sm
+		font-size: 14px
+	&__right
+		+md
+			margin: 20px 0 0
+	&__link
+		color: #666
+		font-family: 'Open Sans Semibold', sans-serif
+		&:hover,
+		&:focus
+			text-decoration: underline
+	strong
+		color: #666
+		font-family: 'Open Sans Semibold', sans-serif

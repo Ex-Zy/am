@@ -1,5 +1,42 @@
 <!-- BEGIN company -->
 <section class="company" data-section="company">
+
+	{# Start header #}
+
+	{% set config = {
+		dropdown: {
+			currentLangText: 'De',
+			currentLangImage: 'de.svg',
+			langList: {
+					langLinkHref: 'about-us-en.html',
+					langName: 'Gbr',
+					langImage: 'gbr.svg'
+				}
+		},
+		list: [
+			{
+				linkHref: '#services',
+				linkText: 'Dienstleistungen'
+			},
+			{
+				linkHref: '#products',
+				linkText: 'Produkte'
+			},
+			{
+				linkHref: '/about-us-de.html',
+				linkText: 'Impressum'
+			},
+			{
+				linkHref: '#contact',
+				linkText: 'Kontakt'
+			}
+		]
+	}%}
+
+	{{mixins.header(config)}}
+	
+	{# END header #}
+
 	<div class="company__in inner">
 		<!-- BEGIN company-content -->
 		<div class="company-content">
