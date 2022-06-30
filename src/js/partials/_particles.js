@@ -1,4 +1,4 @@
-import 'particles.js';
+import particlesJS from 'particles.js';
 
 particlesJS('particles-js', {
   'particles': {

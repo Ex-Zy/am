@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import $ from 'jquery';
 import 'jquery-validation';
 

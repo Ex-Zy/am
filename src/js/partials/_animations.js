@@ -1,3 +1,3 @@
-import {WOW} from 'wowjs';
+import {WOW} from 'wow.js';
 
 new WOW().init();
