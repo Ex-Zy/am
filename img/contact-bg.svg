@@ -1,0 +1,12 @@
+<svg width="1440" height="315" viewBox="0 0 1440 315" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>
+        Intersect
+    </title>
+    <desc>
+        Created using Figma
+    </desc>
+    <use xlink:href="#a" fill="#FFF"/>
+    <defs>
+        <path id="a" d="M1440 7.734V314.63H0V0c187.706 14.97 1079.98 80.67 1440 7.734z"/>
+    </defs>
+</svg>
