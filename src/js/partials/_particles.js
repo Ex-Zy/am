@@ -1,4 +1,5 @@
-import particlesJS from 'particles.js';
+/* eslint-disable no-undef */
+import 'particles.js'; // installed globally in window
 
 particlesJS('particles-js', {
   'particles': {
